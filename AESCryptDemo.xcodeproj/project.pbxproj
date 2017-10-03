@@ -12,6 +12,7 @@
 		838A3E291F83CB34008BDD67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838A3E271F83CB34008BDD67 /* Main.storyboard */; };
 		838A3E2B1F83CB34008BDD67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838A3E2A1F83CB34008BDD67 /* Assets.xcassets */; };
 		838A3E2E1F83CB34008BDD67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838A3E2C1F83CB34008BDD67 /* LaunchScreen.storyboard */; };
+		838A3E381F83CCA2008BDD67 /* CryptLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A3E361F83CCA2008BDD67 /* CryptLib.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		838A3E2A1F83CB34008BDD67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838A3E2D1F83CB34008BDD67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		838A3E2F1F83CB34008BDD67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838A3E351F83CCA1008BDD67 /* AESCryptDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AESCryptDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		838A3E361F83CCA2008BDD67 /* CryptLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CryptLib.m; path = AESCryptDemo/CryptLib.m; sourceTree = "<group>"; };
+		838A3E371F83CCA2008BDD67 /* CryptLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CryptLib.h; path = AESCryptDemo/CryptLib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,8 +42,11 @@
 		838A3E171F83CB34008BDD67 = {
 			isa = PBXGroup;
 			children = (
+				838A3E371F83CCA2008BDD67 /* CryptLib.h */,
+				838A3E361F83CCA2008BDD67 /* CryptLib.m */,
 				838A3E221F83CB34008BDD67 /* AESCryptDemo */,
 				838A3E211F83CB34008BDD67 /* Products */,
+				838A3E351F83CCA1008BDD67 /* AESCryptDemo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					838A3E1F1F83CB34008BDD67 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838A3E381F83CCA2008BDD67 /* CryptLib.m in Sources */,
 				838A3E261F83CB34008BDD67 /* ViewController.swift in Sources */,
 				838A3E241F83CB34008BDD67 /* AppDelegate.swift in Sources */,
 			);
@@ -274,11 +283,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AESCryptDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ctm.AESCryptDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AESCryptDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,11 +300,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AESCryptDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ctm.AESCryptDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AESCryptDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
