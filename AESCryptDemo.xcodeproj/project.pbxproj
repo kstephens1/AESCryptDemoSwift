@@ -13,6 +13,7 @@
 		838A3E2B1F83CB34008BDD67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838A3E2A1F83CB34008BDD67 /* Assets.xcassets */; };
 		838A3E2E1F83CB34008BDD67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838A3E2C1F83CB34008BDD67 /* LaunchScreen.storyboard */; };
 		838A3E381F83CCA2008BDD67 /* CryptLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 838A3E361F83CCA2008BDD67 /* CryptLib.m */; };
+		839EEBC41F83D7F20021049E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 839EEBC31F83D7F20021049E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		838A3E351F83CCA1008BDD67 /* AESCryptDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AESCryptDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		838A3E361F83CCA2008BDD67 /* CryptLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CryptLib.m; path = AESCryptDemo/CryptLib.m; sourceTree = "<group>"; };
 		838A3E371F83CCA2008BDD67 /* CryptLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CryptLib.h; path = AESCryptDemo/CryptLib.h; sourceTree = "<group>"; };
+		839EEBC31F83D7F20021049E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		838A3E171F83CB34008BDD67 = {
 			isa = PBXGroup;
 			children = (
+				839EEBC31F83D7F20021049E /* README.md */,
 				838A3E371F83CCA2008BDD67 /* CryptLib.h */,
 				838A3E361F83CCA2008BDD67 /* CryptLib.m */,
 				838A3E221F83CB34008BDD67 /* AESCryptDemo */,
@@ -133,6 +136,7 @@
 			files = (
 				838A3E2E1F83CB34008BDD67 /* LaunchScreen.storyboard in Resources */,
 				838A3E2B1F83CB34008BDD67 /* Assets.xcassets in Resources */,
+				839EEBC41F83D7F20021049E /* README.md in Resources */,
 				838A3E291F83CB34008BDD67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
